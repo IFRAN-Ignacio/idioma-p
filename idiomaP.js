@@ -1,18 +1,3 @@
-/*
- * Idioma P - Traductor de castellano a Idioma P
- * 
- * Regla: por cada vocal en una palabra, se duplica y se pone una 'p' en medio.
- * Ejemplo: 'hola' -> 'hopolapa'
- * 
- * Se respeta mayúsculas/minúsculas: si la vocal es mayúscula, la 'P' también lo es.
- * Ejemplo: 'Ah' -> 'Apah'  (A mayúscula -> ApA, pero la segunda A queda como minúscula
- *                            del original... ojo: 'Ah' tiene UNA sola A, así que pasa a 'ApA'?
- *                            No: mirando el ejemplo del enunciado, 'Ah' -> 'Apah',
- *                            o sea la 'A' se duplica como 'Apa' (P mayúscula + a minúscula).
- *                            => regla: P en mayúscula si la vocal es mayúscula,
- *                                       la vocal duplicada se escribe en minúscula.
- */
-
 // Función traductora
 function traducirAIdiomaP(frase) {
     let resultado = "";              // string donde voy armando la salida
